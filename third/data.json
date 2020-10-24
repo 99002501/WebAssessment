@@ -1,0 +1,20 @@
+[{
+    "userId": 100,
+    "userName": "suba",
+    "userCity": "Mysore",
+    "userEmail": "shudhuu@gmail.com",
+    "userPhone": "65465512"
+}, {
+    "userId": 200,
+    "userName": "Sahana",
+    "userCity": "Chennai",
+    "userEmail": "sahana@gmail.com",
+    "userPhone": "9955884156"
+}, {
+    "userId": 300,
+    "userName": "maha",
+    "userCity": "Tanjore",
+    "userEmail": "maha@gmail.com",
+    "userPhone": "9789456123"
+
+}]
