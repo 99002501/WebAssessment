@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <style>
+    body{
+    background-color:white;
+}
+        input[type=text],input[type=password]{
+                width: 25%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                resize: vertical;
+         }
+            input[type=submit] {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+             padding: 15px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            }
+
+</style>
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("name1").value;
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("address").value;
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("mail").value;
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("phone").value;
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("myList").value;             
+
+    }
+  </script>
+
+  </head>
+<body>
+
+  <form>
+    <form >
+      Name <input type="text" placeholder="Enter the name" id="name1"> <br><br>
+     Address <input type="password" placeholder="Enter the Address" id="address"> <br><br>
+      Email <input type="text" placeholder="Enter the Email Id" id="mail"> <br><br>
+      Contact <input type="text" id="phone"> <br><br>
+      City<select id="myList">
+          <option >----------select-----------</option>
+          <option>Coimbatore</option>
+          <option>Erode</option>
+          <option>Madurai</option>
+          <option>Chennai</option>
+          <option>Tirupur</option>
+        </select> <br>
+        <br>
+      Date <input type="date" id="date" ><br>
+        Gender<input type="radio">Male<input type="radio">Female
+        <br>
+  </form>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Details </label>
+  <p><span id='display'></span></p>
+  
+</body>
+</html>
